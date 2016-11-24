@@ -1,9 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8" />
+    <title>Embedded SVG</title>
+    <style>
+        body {
+            background-color: chartreuse;
+        }
+        .myelement {
+            /*background-image: url(mediaSpol-github.svg);*/
+            /*background-image: url(mediaSpol-facebook.svg);*/
+background-color: blue;
+            height: 60px;
+            background-size: 50px;
+            background-repeat: no-repeat;
+        }
+        .obrazek img{
+            display: block;
+            margin:20px auto;}
+    </style>
 </head>
-hjhjhjj
-mokeogf
-to są pliki do brancha
-tu są zmiany od trzeciego wymiaru2
+<body>
+<h1>Embedded SVG</h1>
+
+<!-- SVG code -->
+<svg width="300px" height="300px"
+     xmlns="http://www.w3.org/2000/svg">
+    <text x="10" y="50" font-size="30">My SVG</text>
+</svg>
+<div class="obrazek">
+    <img src="mediaSpol-facebook.svg" alt="fb Icon" style="width:58px;height:58px;">
+    <img src="mediaSpol-github.svg" alt="github Icon" style="width:54px;height:54px;">
+</div>
+<footer>
+    dodany footer
+</footer>
+</body>
 </html>
