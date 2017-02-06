@@ -1,21 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Grid, Row, Col, Button } from 'react-bootstrap'
+
 import './App.css';
+
+let img1= process.env.PUBLIC_URL
+let img2= '/images/layer1.jpeg'
 
 class App extends Component {
   render() {
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+
+
+        <Grid fluid style={{backgroundImage: 'url("' + img1 + img2 + '")', backgroundSize: 'cover', minHeight: '800px'}}>
+          <Row   className="show-grid">
+            <Col  xs={6} md={4}>
+              <Button bsStyle="success">Get started today</Button>
+            </Col>
+          </Row>
+          {/*<img src={img1 + img2}*/}
+          />
+        </Grid>
+
     );
   }
 }
 
 export default App;
+{/*<img src={process.env.PUBLIC_URL + '/images/layer1.jpeg'}*/}
+     {/*role="presentation"*/}
+{/*/>*/}
