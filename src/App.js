@@ -21,19 +21,21 @@ class App extends Component {
               <p>lkdjfkj fsj sdf lsad fls fll flsf sl flskf  rfflsa jf kls</p>
             </Col>
           </Row>
-          <Row>
-            <Col xs={3} xsOffset={3}>
+          <Row className="rectAfterLayer1">
+            <div className="moveUpText">
+            <Col xs={4} xsOffset={2} md={3} mdOffset={3}>
               <h4>A fantastic heading</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
-              <h4>Blaz robar for president</h4>
+              <h4 className="stayLowText">Blaz robar for president</h4>
               <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </Col>
-            <Col xs={3}>
+            <Col xs={4} md={3}>
               <h4>Good day blokes</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
-              <h4>Vote for Robar</h4>
+              <h4 className="stayLowText">Vote for Robar</h4>
               <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </Col>
+            </div>
           </Row>
         </Grid>
     );
