@@ -60,7 +60,7 @@ class App extends Component {
 
             <p>lkdjfkj fsj sdf lsad fls fll flsf sl flskf rfflsa jf kls</p>
           </Col>
-          <Row className="rectAfterLayer2">
+          <Row className="rectInLayer2">
             <Col xs={6} xsOffset={3}>
               <h3>Experience the rush today</h3>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -69,11 +69,13 @@ class App extends Component {
             </Col>
           </Row>
         </Row>
+        <Row className="whiteLayer">
 
+        </Row>
         <Row className="show-grid" style={{
           background: 'url("' + process.env.PUBLIC_URL + '/images/layer3.jpeg") no-repeat center center',
           backgroundSize: 'cover',
-          minHeight: '800px'
+          minHeight: '300px'
         }}>
         </Row>
       </Grid>
