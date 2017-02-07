@@ -46,7 +46,6 @@
 .rectInLayer2 {
   background-color: rgba(41, 31, 79, 0.9);
   height: 220px;
-  margin-top: 60%;
 }
 .rectInLayer2 h3{
   color: white;
@@ -57,5 +56,25 @@
 }
 .whiteLayer {
   height: 500px;
-
+}
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .rectInLayer2 {
+    margin-top: 68%;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .rectInLayer2 {
+    margin-top: 46%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .rectInLayer2 {
+    margin-top: 36%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .rectInLayer2 {
+    margin-top: 27%;
+  }
 }
