@@ -4,75 +4,105 @@
   font-size: 2rem;
   clear: both;
 }
+
 .button-layer1 {
   float: right;
   clear: both;
 }
-.show-grid h2:first-child {
+
+.firstLayer h2:first-child {
   margin-top: 200px;
   margin-bottom: 0;
 }
-.show-grid h2:nth-child(2) {
+
+.firstLayer h2:nth-child(2) {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.show-grid p {
+
+.textUnderButton {
   float: right;
   color: white;
   font-size: 0.9rem;
   clear: both;
   margin-top: 5px;
 }
+
 .rectAfterLayer1 {
 
   height: 220px;
   background-color: #333d4f;
   color: white;
 }
-.rectAfterLayer1 h4{
+
+.rectAfterLayer1 h4 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.2rem;
 }
-.rectAfterLayer1 p{
+
+.rectAfterLayer1 p {
   font-size: 1rem;
 }
+
 .moveUpText {
   margin-top: -120px;
 }
+
 .stayLowText {
   margin-top: 45px;
 }
+
 .rectInLayer2 {
   background-color: rgba(41, 31, 79, 0.9);
   height: 220px;
+  text-align: center;
+
 }
-.rectInLayer2 h3{
+
+.rectInLayer2 h3 {
   color: white;
   text-align: center;
 }
-.rectInLayer2 p{
+
+.rectInLayer2 p {
   color: rgba(237, 237, 237, 0.6)
 }
+
 .whiteLayer {
   height: 500px;
 }
-/* Small devices (tablets, 768px and up) */
+
+.button-layer2 {
+  text-align: center;
+}
+
+.textUnderButton2 {
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  clear: both;
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 768px) {
   .rectInLayer2 {
     margin-top: 68%;
   }
 }
+
 @media screen and (max-width: 992px) and (min-width: 769px) {
   .rectInLayer2 {
     margin-top: 46%;
   }
 }
+
 @media screen and (max-width: 1200px) and (min-width: 993px) {
   .rectInLayer2 {
     margin-top: 36%;
   }
 }
+
 @media screen and (min-width: 1201px) {
   .rectInLayer2 {
     margin-top: 27%;
