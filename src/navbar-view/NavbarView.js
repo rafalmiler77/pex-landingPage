@@ -1,12 +1,12 @@
 /**
  * Created by rafael on 08.02.17.
  */
-import React, {Component} from 'react';
+import React from 'react';
 import {Nav, NavItem, Navbar, FormGroup, FormControl} from 'react-bootstrap'
 
 import './NavbarView.css';
 
-class NavbarView extends Component {
+class NavbarView extends React.Component {
   render() {
 
     return (
