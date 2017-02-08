@@ -7,10 +7,6 @@ import './App.css';
 class App extends Component {
   render() {
 
-    let btnCustomStyle = {
-      "backgroundImage": "none",
-      "backgroundColor": "#8600cb"
-    };
     function handleSelect(selectedKey) {
       alert('selected ' + selectedKey);
     }
@@ -23,27 +19,26 @@ class App extends Component {
           backgroundSize: 'cover',
           minHeight: '800px'
         }}>
-          <Nav bsStyle="pills" activeKey={1} onSelect={handleSelect}>
-            <NavItem eventKey={1} href="/home">NavItem 1 content</NavItem>
-            <NavItem eventKey={2} title="Item">NavItem 2 content</NavItem>
-            <NavItem eventKey={3} disabled>NavItem 3 content</NavItem>
-          </Nav>
-          <Navbar className="navbarChanged">
+
+          <Navbar className="navbarCustomStyle">
             <Navbar.Header>
               <Navbar.Brand>
-                <a href="#">React-Bootstrap</a>
+                <a href="#"><span className="pex">pex</span> <span className="afterPex">Photoshop Website Template</span></a>
               </Navbar.Brand>
             </Navbar.Header>
-            <Nav>
-              <NavItem eventKey={1} href="#">Link</NavItem>
-              <NavItem eventKey={2} href="#">Link</NavItem>
+            <Nav pullRight={true} activeKey={1} onSelect={handleSelect}>
+              <NavItem eventKey={1} href="#">About</NavItem>
+              <NavItem eventKey={2} href="#">How it works</NavItem>
+              <NavItem eventKey={3} href="#">Services</NavItem>
+              <NavItem eventKey={4} href="#">FAQ</NavItem>
+              <NavItem eventKey={5} href="#">Contact</NavItem>
             </Nav>
-
           </Navbar>
+
           <Col className='firstLayer' xs={6}>
             <h2 className="title-layer1">Designs your eyeballs</h2>
             <h2 className="title-layer1">will thank you for</h2>
-            <Button style={btnCustomStyle} bsStyle="primary" className='button-layer1'>Get started today</Button>
+            <Button bsStyle="primary" className='button-layer1 buttonCustomShape'>Get started today</Button>
             <p className="textUnderButton" >lkdjfkj fsj sdf lsad fls fll flsf sl flskf rfflsa jf kls</p>
           </Col>
         </Row>
@@ -88,7 +83,7 @@ class App extends Component {
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled</p>
-              <Button style={btnCustomStyle} bsStyle="primary" className='button-layer2'>Get started today</Button>
+              <Button bsStyle="primary" className='button-layer2 buttonCustomShape'>Get started today</Button>
               <p className="textUnderButton2" >lkdjfkj fsj sdf lsad fls fll flsf sl flskf rfflsa jf kls</p>
 
             </Col>
