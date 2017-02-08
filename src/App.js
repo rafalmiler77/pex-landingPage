@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap'
+import {Nav, NavItem, Navbar} from 'react-bootstrap'
 
 import './App.css';
 
@@ -10,14 +11,35 @@ class App extends Component {
       "backgroundImage": "none",
       "backgroundColor": "#8600cb"
     };
+    function handleSelect(selectedKey) {
+      alert('selected ' + selectedKey);
+    }
     return (
 
       <Grid fluid>
+
         <Row className="show-grid" style={{
           background: 'url("' + process.env.PUBLIC_URL + '/images/layer1.jpeg") no-repeat center center',
           backgroundSize: 'cover',
           minHeight: '800px'
         }}>
+          <Nav bsStyle="pills" activeKey={1} onSelect={handleSelect}>
+            <NavItem eventKey={1} href="/home">NavItem 1 content</NavItem>
+            <NavItem eventKey={2} title="Item">NavItem 2 content</NavItem>
+            <NavItem eventKey={3} disabled>NavItem 3 content</NavItem>
+          </Nav>
+          <Navbar className="navbarChanged">
+            <Navbar.Header>
+              <Navbar.Brand>
+                <a href="#">React-Bootstrap</a>
+              </Navbar.Brand>
+            </Navbar.Header>
+            <Nav>
+              <NavItem eventKey={1} href="#">Link</NavItem>
+              <NavItem eventKey={2} href="#">Link</NavItem>
+            </Nav>
+
+          </Navbar>
           <Col className='firstLayer' xs={6}>
             <h2 className="title-layer1">Designs your eyeballs</h2>
             <h2 className="title-layer1">will thank you for</h2>

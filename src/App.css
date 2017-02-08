@@ -1,3 +1,7 @@
+.navbarChanged {
+  background-color: aqua;
+}
+
 .title-layer1 {
   float: right;
   color: white;
@@ -57,7 +61,6 @@
   background-color: rgba(41, 31, 79, 0.9);
   height: 220px;
   text-align: center;
-
 }
 
 .rectInLayer2 h3 {
