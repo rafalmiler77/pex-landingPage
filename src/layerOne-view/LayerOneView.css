@@ -1,0 +1,24 @@
+.button-layer1 {
+  float: right;
+  clear: both;
+}
+.buttonCustomShape{
+  background-image: none;
+  background-color: #8600cb;
+  border-radius: 6em
+}
+.firstLayer h2:first-child {
+  margin-top: 200px;
+  margin-bottom: 0;
+}
+.firstLayer h2:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.textUnderButton {
+  float: right;
+  color: white;
+  font-size: 0.9rem;
+  clear: both;
+  margin-top: 5px;
+}

@@ -17,7 +17,7 @@ class NavbarView extends React.Component {
                 <a href="#"><span className="pex">pex</span> <span className="afterPex">Photoshop Website Template</span></a>
               </Navbar.Brand>
             </Navbar.Header>
-            <Nav pullRight={true} activeKey={1}>
+            <Nav pullRight activeKey={1}>
               <NavItem eventKey={1} href="#about">About</NavItem>
               <NavItem eventKey={2} href="#howItWorks">How it works</NavItem>
               <NavItem eventKey={3} href="#services">Services</NavItem>

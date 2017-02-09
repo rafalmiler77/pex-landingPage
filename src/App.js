@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap'
 import {NavbarView} from './navbar-view'
+import { LayerOneView } from './layerOne-view'
 import './App.css';
 
 class App extends Component {
@@ -9,19 +10,9 @@ class App extends Component {
     return (
 
       <Grid fluid>
-        <Row className="show-grid" style={{
-          background: 'url("' + process.env.PUBLIC_URL + '/images/layer1.jpeg") no-repeat center center',
-          backgroundSize: 'cover',
-          minHeight: '800px'
-        }}>
-          <NavbarView/>
-          <Col className='firstLayer' xs={6}>
-            <h2 className="title-layer1">Designs your eyeballs</h2>
-            <h2 className="title-layer1">will thank you for</h2>
-            <Button bsStyle="primary" className='button-layer1 buttonCustomShape'>Get started today</Button>
-            <p className="textUnderButton">lkdjfkj fsj sdf lsad fls fll flsf sl flskf rfflsa jf kls</p>
-          </Col>
-        </Row>
+        <NavbarView/>
+
+        <LayerOneView/>
         <Row className="rectAfterLayer1">
           <div className="moveUpText">
             <Col xs={4} xsOffset={2} md={3} mdOffset={3}>
