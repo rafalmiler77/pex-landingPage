@@ -1,71 +1,24 @@
-.title-layer1 {
-  float: right;
-  color: white;
-  font-size: 2rem;
-  clear: both;
-}
-
-.buttonCustomShape{
-  background-image: none;
-  background-color: #8600cb;
-  border-radius: 6em
-}
-
-.textUnderButton {
-  float: right;
-  color: white;
-  font-size: 0.9rem;
-  clear: both;
-  margin-top: 5px;
-}
-
-.rectInLayer2 {
-  background-color: rgba(41, 31, 79, 0.9);
-  height: 220px;
-  text-align: center;
-}
-
-.rectInLayer2 h3 {
-  color: white;
-  text-align: center;
-}
-
-.rectInLayer2 p {
-  color: rgba(237, 237, 237, 0.6)
-}
-
-.button-layer2 {
-  text-align: center;
-}
-
-.textUnderButton2 {
-  text-align: center;
-  color: white;
-  font-size: 0.9rem;
-  clear: both;
-  margin-top: 5px;
-}
 
 @media screen and (max-width: 768px) {
-  .rectInLayer2 {
+  .violetInMountains {
     margin-top: 68%;
   }
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
-  .rectInLayer2 {
+  .violetInMountains {
     margin-top: 46%;
   }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 993px) {
-  .rectInLayer2 {
+  .violetInMountains {
     margin-top: 36%;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .rectInLayer2 {
+  .violetInMountains {
     margin-top: 27%;
   }
 }

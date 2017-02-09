@@ -1,3 +1,9 @@
+.title-layer1 {
+  float: right;
+  color: white;
+  font-size: 2rem;
+  clear: both;
+}
 .button-layer1 {
   float: right;
   clear: both;

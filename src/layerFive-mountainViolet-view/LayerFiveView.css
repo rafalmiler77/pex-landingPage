@@ -1,0 +1,26 @@
+.violetInMountains {
+  background-color: rgba(41, 31, 79, 0.9);
+  height: 220px;
+  text-align: center;
+}
+
+.violetInMountains h3 {
+  color: white;
+  text-align: center;
+}
+
+.violetInMountains p {
+  color: rgba(237, 237, 237, 0.6)
+}
+
+.buttonLayerFive {
+  text-align: center;
+}
+
+.textUnderButton2 {
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  clear: both;
+  margin-top: 5px;
+}
