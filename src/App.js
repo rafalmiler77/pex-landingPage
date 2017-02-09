@@ -3,6 +3,7 @@ import {Grid, Row, Col, Button} from 'react-bootstrap'
 import {NavbarView} from './navbar-view'
 import { LayerOneView } from './layerOne-view'
 import { LayerTwoView } from './layerTwo-darkblue-view'
+import { LayerThreeView } from './layerThree-pinkTrees-view'
 import './App.css';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
 
         <LayerOneView/>
         <LayerTwoView/>
+        <LayerThreeView/>
 
         <Row className="show-grid" style={{
           background: 'url("' + process.env.PUBLIC_URL + '/images/layer2.jpeg") no-repeat center center',
@@ -49,12 +51,7 @@ class App extends Component {
               versions of Lorem Ipsum.</p>
           </Col>
         </Row>
-        <Row className="show-grid" style={{
-          background: 'url("' + process.env.PUBLIC_URL + '/images/layer3.jpeg") no-repeat center center',
-          backgroundSize: 'cover',
-          minHeight: '300px'
-        }}>
-        </Row>
+
       </Grid>
     );
   }
