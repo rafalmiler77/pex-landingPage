@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap'
 import {NavbarView} from './navbar-view'
 import { LayerOneView } from './layerOne-view'
+import { LayerTwoView } from './layerTwo-darkblue-view'
 import './App.css';
 
 class App extends Component {
@@ -13,32 +14,8 @@ class App extends Component {
         <NavbarView/>
 
         <LayerOneView/>
-        <Row className="rectAfterLayer1">
-          <div className="moveUpText">
-            <Col xs={4} xsOffset={2} md={3} mdOffset={3}>
-              <h4>A fantastic heading</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled</p>
-              <h4 className="stayLowText">Blaz robar for president</h4>
-              <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-                versions of Lorem Ipsum.</p>
-            </Col>
-            <Col xs={4} md={3}>
-              <h4>Good day blokes</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled</p>
-              <h4 className="stayLowText">Vote for Robar</h4>
-              <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-                versions of Lorem Ipsum.</p>
-            </Col>
-          </div>
-        </Row>
+        <LayerTwoView/>
+
         <Row className="show-grid" style={{
           background: 'url("' + process.env.PUBLIC_URL + '/images/layer2.jpeg") no-repeat center center',
           backgroundSize: 'cover',
