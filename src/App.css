@@ -19,8 +19,6 @@
   margin-top: 5px;
 }
 
-
-
 .rectInLayer2 {
   background-color: rgba(41, 31, 79, 0.9);
   height: 220px;
@@ -36,10 +34,6 @@
   color: rgba(237, 237, 237, 0.6)
 }
 
-.whiteLayer {
-  height: 500px;
-}
-
 .button-layer2 {
   text-align: center;
 }
@@ -50,23 +44,6 @@
   font-size: 0.9rem;
   clear: both;
   margin-top: 5px;
-}
-.whiteLayer h4 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: black;
-  margin-top: 200px
-}
-.whiteLayer p:nth-child(2) {
-  font-weight: 200;
-  font-size: 1.6rem;
-  color: rgba(6, 7, 22, 0.95)
-}
-.whiteLayer p:nth-child(3) {
-  font-weight: 100;
-  font-size: 1.2rem;
-  color: rgba(6, 7, 22, 0.95)
 }
 
 @media screen and (max-width: 768px) {
